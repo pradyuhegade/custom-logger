@@ -1,0 +1,16 @@
+{
+    "levels": {
+      "0": "TRACE",
+      "1": "DEBUG",
+      "2": "INFO",
+      "3": "WARNING",
+      "4": "ERROR"
+    },
+    "codes": {
+      "100": "DB_CONNECT_SUCCESS",
+      "101": "DB_CONNECT_FAIL",
+      "102": "USER_LOGIN",
+      "103": "FILE_NOT_FOUND",
+      "104": "TASK_COMPLETED"
+    }
+}  
