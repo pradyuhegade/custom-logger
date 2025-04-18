@@ -41,3 +41,18 @@ cpp-custom-logger/
 ├── CMakeLists.txt            # CMake build configuration
 ├── README.md                 # This file 😊
 └── LICENSE                   # Project license
+
+
+## How to Build
+- mkdir build (if not present) && cd build
+- cmake -G Ninja -DCMAKE_INSTALL_PREFIX="/install" ..
+- DESTDIR=../dist ninja install
+
+### This should give you:
+dist/install/
+├── include/
+│   └── logger.h
+│   └── ...
+├── lib/
+│   └── liblogger.a
+│   └── cmake/logger/
