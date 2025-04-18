@@ -9,6 +9,7 @@ enum class LogCode : uint16_t {
     USER_LOGIN         = 102,
     FILE_NOT_FOUND     = 103,
     TASK_COMPLETED     = 104,
+    TASK_INVALID       = 105,
     // Add more as needed
 };
 
