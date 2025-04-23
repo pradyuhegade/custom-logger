@@ -31,6 +31,11 @@ void Logger::start(const std::string& filename) {
         fs::create_directories(logPath.parent_path());
     }
 
+    fs::path parent = logPath.parent_path();
+    if (!parent.empty() && !fs::exists(parent)) {
+        fs::create_directories(parent);  // Only create if path is valid
+    }
+
     logFile_.open(filename, std::ios::out | std::ios::app);
     if (!logFile_.is_open()) {
         std::cerr << "Logger failed to open file: " << filename << std::endl;
